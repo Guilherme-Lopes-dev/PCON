@@ -1,0 +1,11 @@
+<svg id="paginacao" xmlns="http://www.w3.org/2000/svg" width="304" height="35" viewBox="0 0 304 35">
+  <g id="Grupo_3123" data-name="Grupo 3123" transform="translate(-52 -1810)">
+    <rect id="Retângulo_233" data-name="Retângulo 233" width="34" height="35" transform="translate(52 1810)" fill="#d91f2d"/>
+    <text id="_1" data-name="1" transform="translate(67 1832)" fill="#fff" font-size="14" font-family="Montserrat-Bold, Montserrat" font-weight="700"><tspan x="0" y="0">1</tspan></text>
+  </g>
+  <text id="_2" data-name="2" transform="translate(77 22)" font-size="14" font-family="Montserrat-Bold, Montserrat" font-weight="700"><tspan x="0" y="0">2</tspan></text>
+  <text id="_3" data-name="3" transform="translate(128 22)" font-size="14" font-family="Montserrat-Bold, Montserrat" font-weight="700"><tspan x="0" y="0">3</tspan></text>
+  <text id="_4" data-name="4" transform="translate(180 22)" font-size="14" font-family="Montserrat-Bold, Montserrat" font-weight="700"><tspan x="0" y="0">4</tspan></text>
+  <text id="_..." data-name="..." transform="translate(239 22)" font-size="14" font-family="Montserrat-Bold, Montserrat" font-weight="700"><tspan x="-5.502" y="0">...</tspan></text>
+  <text id="_14" data-name="14" transform="translate(296 22)" font-size="14" font-family="Montserrat-Bold, Montserrat" font-weight="700"><tspan x="-7.567" y="0">14</tspan></text>
+</svg>
