@@ -41,7 +41,6 @@
 
 	<section class="bot-footer">
 		<div class="container bottom">
-			<div class="separator"></div>
 			<div class="menu-footer">
 				<a class="link" href="">Home</a>
 				<a class="link" href="">Institucional</a>
@@ -51,6 +50,10 @@
 				<a class="link" href="">Contato</a>
 			</div>
 
+			<div class="politica">
+				<a href="/politica_privacidade"> Politica de Privacidade</a>
+			</div>
+
 		</div>
 	</section>
 </footer>
@@ -58,15 +61,15 @@
 
 
 
-<!-- BOOTSTRAP 4 -->
-<script src="website/plugins/bootstrap/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-
+<!-- BOOTSTRAP 5 -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 <script src="website/js/jquery.js"></script>
 <script src="website/plugins/mask/jquery.mask.min.js"></script>
+<script src="website/js/jquery.inputmask.bundle.min.js"></script>
 <script src="website/js/scripts.js"></script>
 <script src="website/js/animacoes.js"></script>
-
 <script src="website/plugins/slick/slick.min.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript"></script>
 
 <?php
 // include "website/plugins/photoswipe/photoswipe.php";

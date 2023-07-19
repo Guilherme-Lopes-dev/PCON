@@ -113,7 +113,7 @@ $(document).ready(function () {
 
   carousel_modelos_institucional.slick({
     slidesToShow: 4,
-    dots: true,
+    dots: false,
     arrows: false,
     appendDots: ".home_modelos_institucional .carousel_content .dots",
     autoplay: false,
@@ -224,7 +224,7 @@ if (pagina === "portfolio") {
   function createPaginationButtons() {
     paginationList.innerHTML = ""; // Limpa os botões existentes
 
-    const maxVisiblePages = 5; // Número máximo de páginas visíveis
+    const maxVisiblePages = 4; // Número máximo de páginas visíveis
 
     if (totalPages <= maxVisiblePages) {
       // Caso o número total de páginas seja menor ou igual ao número máximo de páginas visíveis, exibe todas as páginas
@@ -250,17 +250,67 @@ if (pagina === "portfolio") {
       }
 
       // Adiciona os botões de página
+      if (startPage > 1) {
+        createPageLink(1); // Adiciona o botão da primeira página
+        if (startPage > 2) {
+          createEllipsis(true); // true indica que os ellipsis estão no início
+        }
+      }
+
       for (let i = startPage; i <= endPage; i++) {
         createPageLink(i);
       }
 
-      // Adiciona os botões de ellipsis no início e no final
-      if (startPage > 1) {
-        createEllipsis(true); // true indica que os ellipsis estão no início
-      }
       if (endPage < totalPages) {
-        createEllipsis(false); // false indica que os ellipsis estão no final
+        if (endPage < totalPages - 1) {
+          createEllipsis(false); // false indica que os ellipsis estão no final
+        }
+        createPageLink(totalPages); // Adiciona o botão da última página
       }
+    }
+  }
+
+  function updatePaginationButtons() {
+    const maxVisiblePages = 4; // Número máximo de páginas visíveis
+
+    let startPage, endPage;
+
+    if (currentPage <= Math.floor(maxVisiblePages / 2)) {
+      // Exibe as primeiras maxVisiblePages páginas
+      startPage = 1;
+      endPage = maxVisiblePages;
+    } else if (currentPage >= totalPages - Math.floor(maxVisiblePages / 2)) {
+      // Exibe as últimas maxVisiblePages páginas
+      startPage = totalPages - maxVisiblePages + 1;
+      endPage = totalPages;
+    } else {
+      // Exibe as páginas ao redor da página atual
+      startPage = currentPage - Math.floor(maxVisiblePages / 2);
+      endPage = currentPage + Math.floor(maxVisiblePages / 2);
+    }
+
+    const pageLinks = paginationList.querySelectorAll("a.page-link");
+    pageLinks.forEach((link) => {
+      const pageNumber = parseInt(link.getAttribute("data-page"));
+      if (pageNumber >= startPage && pageNumber <= endPage) {
+        link.style.display = "inline-block";
+      } else {
+        link.style.display = "none";
+      }
+    });
+
+    const ellipsisStart = paginationList.querySelector(".ellipsis-start");
+    if (startPage > 1) {
+      ellipsisStart.style.display = "inline-block";
+    } else {
+      ellipsisStart.style.display = "none";
+    }
+
+    const ellipsisEnd = paginationList.querySelector(".ellipsis-end");
+    if (endPage < totalPages) {
+      ellipsisEnd.style.display = "inline-block";
+    } else {
+      ellipsisEnd.style.display = "none";
     }
   }
 
@@ -274,14 +324,23 @@ if (pagina === "portfolio") {
     link.innerText = pageNumber;
     link.setAttribute("data-page", pageNumber); // Adiciona o atributo data-page
 
+    if (pageNumber === currentPage) {
+      // Verifica se é o botão da página atual
+      li.classList.add("active"); // Adiciona a classe "active"
+      link.style.backgroundColor = "#AA171A"; // Define a cor de fundo como vermelho
+      link.style.color = "#fff"; // Define a cor do texto como branco
+    }
+
     li.appendChild(link);
     paginationList.appendChild(li);
 
     link.addEventListener("click", (event) => {
       event.preventDefault();
       const pageNumber = parseInt(link.getAttribute("data-page")); // Obtém o número da página do atributo data-page
+      currentPage = pageNumber; // Atualiza a página atual
       showItemsByPage(pageNumber);
       updateActiveLink(pageNumber);
+      updatePaginationButtons(); // Atualiza os botões de paginação
     });
   }
 
@@ -291,15 +350,18 @@ if (pagina === "portfolio") {
 
     const span = document.createElement("span");
     span.classList.add("page-link");
+    span.classList.add(isStart ? "ellipsis-start" : "ellipsis-end");
     span.innerText = "...";
 
-    if (isStart) {
-      paginationList.prepend(li); // Insere os ellipsis no início da lista
-    } else {
-      paginationList.appendChild(li); // Insere os ellipsis no final da lista
-    }
-
     li.appendChild(span);
+    paginationList.appendChild(li);
+  }
+
+  function scrollToTop() {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
   }
 
   function showItemsByPage(pageNumber) {
@@ -313,6 +375,7 @@ if (pagina === "portfolio") {
         image.style.display = "none";
       }
     });
+    scrollToTop(); // Rolar até o topo
   }
   function updateActiveLink(pageNumber) {
     const links = paginationList.querySelectorAll("a.page-link");
@@ -331,26 +394,99 @@ if (pagina === "portfolio") {
     );
     if (activeLink) {
       activeLink.parentElement.classList.add("active");
-      activeLink.style.backgroundColor = "#A11416";
+      activeLink.style.backgroundColor = "#AA171A";
       activeLink.style.color = "#fff";
     }
+
+    createPaginationButtons(); // Atualiza os botões de paginação
   }
 
   createPaginationButtons();
   showItemsByPage(1);
   updateActiveLink(1);
 
-  document.addEventListener('DOMContentLoaded', function() {
-    const container = document.querySelector('#pagination-container');
+  document.addEventListener("DOMContentLoaded", function () {
+    const container = document.querySelector("#pagination-container");
     const elements = container.children;
-  
+
     for (let i = 0; i < elements.length; i++) {
       const element = elements[i];
-      const className = i % 2 === 0 ? 'left' : 'right';
+      const className = i % 2 === 0 ? "left" : "right";
       element.classList.add(className);
     }
   });
-  
+}
+// modal
+if (pagina === "page_portfolio") {
+  var player;
+  var videoLoaded = false;
+
+  function onYouTubeIframeAPIReady() {
+    console.log("onYouTubeIframeAPIReady");
+    player = new YT.Player("player", {
+      videoId: "JsxW3iaAR0s",
+      playerVars: {
+        controls: 0,
+        rel: 0,
+        loop: 1,
+        autoplay: 1,
+      },
+      events: {
+        onReady: onPlayerReady,
+        onStateChange: onPlayerStateChange,
+      },
+    });
+  }
+
+  function onPlayerReady(event) {
+    if (videoLoaded) {
+      player.playVideo();
+    }
+  }
+
+  function onPlayerStateChange(event) {
+    if (event.data == YT.PlayerState.ENDED) {
+      // Quando o vídeo terminar, reinicie a reprodução
+      player.playVideo();
+    }
+  }
+
+  function loadYouTubeVideo() {
+    var tag = document.createElement("script");
+    tag.src = "https://www.youtube.com/iframe_api";
+    var firstScriptTag = document.getElementsByTagName("script")[0];
+    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+  }
+
+  var myModalEl = document.getElementById("dynamicVideoModal");
+  myModalEl.addEventListener("show.bs.modal", function (event) {
+    if (!videoLoaded) {
+      loadYouTubeVideo();
+      videoLoaded = true;
+    } else if (player && player.getPlayerState() === YT.PlayerState.PAUSED) {
+      player.playVideo();
+    }
+  });
+
+  myModalEl.addEventListener("hidden.bs.modal", function (event) {
+    if (player && player.pauseVideo) {
+      player.pauseVideo();
+    }
+  });
+
+  window.addEventListener("click", function (event) {
+    var modal = document.getElementById("dynamicVideoModal");
+    var playerContainer = document.getElementById("playerContainer");
+    if (
+      !modal.contains(event.target) &&
+      !playerContainer.contains(event.target)
+    ) {
+      if (player && player.pauseVideo) {
+        player.pauseVideo();
+      }
+    }
+  });
 }
 
-// Transição no navbar
+if (pagina === "contato") {
+}

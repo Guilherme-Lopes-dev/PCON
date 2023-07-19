@@ -43,15 +43,31 @@ include "_inc_headers.php";
 
         <section class="images">
             <div class="container">
-                <div class="image">
-                    <img class="" src="/website/img/estrutura/img1.png" alt="">
+                <div id="gallery" class="gallery" itemscope itemtype="http://schema.org/ImageGallery">
+
+                    <figure class="image"  itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                        <!-- Link to the big image, not mandatory, but usefull when there is no JS -->
+                        <a class="open" href="/website/img/estrutura/img1.png" data-caption="Sea side, south shore<br><em class='text-muted'>© Dominik Schröder</em>" data-width="1200" data-height="900" itemprop="contentUrl">
+                            <!-- Thumbnail -->
+                            <img src="/website/img/estrutura/img1.png" itemprop="thumbnail" alt="Image description">
+                        </a>
+                    </figure>
+                    <figure  class="image" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                        <!-- Link to the big image, not mandatory, but usefull when there is no JS -->
+                        <a class="open" href="/website/img/estrutura/img1.png" data-caption="Saaa side, south shore<br><em class='text-muted'>© Dominik Schröder</em>" data-width="1200" data-height="900" itemprop="contentUrl">
+                            <!-- Thumbnail -->
+                            <img src="/website/img/estrutura/img1.png" itemprop="thumbnail" alt="Image description">
+                        </a>
+                    </figure>
+                    <figure class="image"  itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                        <!-- Link to the big image, not mandatory, but usefull when there is no JS -->
+                        <a class="open" href="/website/img/estrutura/img1.png" data-caption="Saaa side, south shore<br><em class='text-muted'>© Dominik Schröder</em>" data-width="1200" data-height="900" itemprop="contentUrl">
+                            <!-- Thumbnail -->
+                            <img src="/website/img/estrutura/img1.png" itemprop="thumbnail" alt="Image description">
+                        </a>
+                    </figure>
                 </div>
-                <div class="image">
-                    <img class="" src="/website/img/estrutura/img2.png" alt="">
-                </div>
-                <div class="image">
-                    <img class="" src="/website/img/estrutura/img3.png" alt="">
-                </div>
+
             </div>
         </section>
 
@@ -61,6 +77,50 @@ include "_inc_headers.php";
         include "website/plugins/photoswipe/photoswipe.php";
         ?>
     </body>
+
+    <script>
+        'use strict';
+
+        /* global jQuery, PhotoSwipe, PhotoSwipeUI_Default, console */
+
+        (function($) {
+
+            // Init empty gallery array
+            var container = [];
+
+            // Loop over gallery items and push it to the array
+            $('#gallery').find('figure').each(function() {
+                var $link = $(this).find('.open'),
+                    item = {
+                        src: $link.attr('href'),
+                        w: $link.data('width'),
+                        h: $link.data('height'),
+                        title: $link.data('caption')
+                    };
+                container.push(item);
+            });
+
+            // Define click event on gallery item
+            $('.open').click(function(event) {
+
+                // Prevent location change
+                event.preventDefault();
+
+                // Define object and gallery options
+                var $pswp = $('.pswp')[0],
+                    options = {
+                        index: $(this).parent('figure').index(),
+                        bgOpacity: 0.85,
+                        showHideOpacity: true
+                    };
+
+                // Initialize PhotoSwipe
+                var gallery = new PhotoSwipe($pswp, PhotoSwipeUI_Default, container, options);
+                gallery.init();
+            });
+
+        }(jQuery));
+    </script>
 
 
     </html>

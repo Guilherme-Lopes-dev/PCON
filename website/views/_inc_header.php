@@ -26,12 +26,12 @@
         </div>
 
         <div class="overlay-content no-margin-padding">
-            <a class="link active" href="">Home</a>
-            <a class="link" href="/institucional">Institucional</a>
-            <a class="link" href="/portfolio">Portfólio</a>
-            <a class="link" href="/servicos">Serviços</a>
-            <a class="link" href="/estrutura">Estrutura</a>
-            <a class="link " href="/contato">Contato</a>
+            <a class="link <?= $pagina == 'home' ? 'active' : '' ?> " href="/">Home</a>
+            <a class="link <?= $pagina == 'institucional' ? 'active' : '' ?>" href="/institucional">Institucional</a>
+            <a class="link <?= $pagina == 'portfolio' ? 'active' : '' ?>" href="/portfolio">Portfólio</a>
+            <a class="link <?= $pagina == 'servicos' ? 'active' : '' ?>" href="/servicos">Serviços</a>
+            <a class="link <?= $pagina == 'estrutura' ? 'active' : '' ?>" href="/estrutura">Estrutura</a>
+            <a class="link <?= $pagina == 'contato' ? 'active' : '' ?>" href="/contato">Contato</a>
             <div class="btn-nav-mobile no-margin-padding">
                 <div>
                     <a target="" href="">
@@ -52,12 +52,12 @@
             </div>
 
             <div class="nav-items">
-                <a class="link" href="/">Home</a>
-                <a class="link" href="/institucional">Institucional</a>
-                <a class="link" href="/portfolio">Portfólio</a>
-                <a class="link" href="/servicos">Serviços</a>
-                <a class="link" href="/estrutura">Estrutura</a>
-                <a class="link" href="/contato">Contato</a>
+                <a class="link <?= $pagina == 'home' ? 'active' : '' ?> " href="/">Home</a>
+                <a class="link <?= $pagina == 'institucional' ? 'active' : '' ?>" href="/institucional">Institucional</a>
+                <a class="link <?= $pagina == 'portfolio' ? 'active' : '' ?>" href="/portfolio">Portfólio</a>
+                <a class="link <?= $pagina == 'servicos' ? 'active' : '' ?>" href="/servicos">Serviços</a>
+                <a class="link <?= $pagina == 'estrutura' ? 'active' : '' ?>" href="/estrutura">Estrutura</a>
+                <a class="link <?= $pagina == 'contato' ? 'active' : '' ?>" href="/contato">Contato</a>
             </div>
             <div class="container-btns">
                 <div class="btn-desktop">

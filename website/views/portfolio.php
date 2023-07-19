@@ -95,7 +95,7 @@ include "_inc_headers.php";
                 </div>
                 <div class="image-to">
                     <div class="img">
-                        <img src="/website/img/portfolio/atacadao-osasco.png" alt="">
+                        <img src="/website/img/portfolio/atacadao-rio.png" alt="">
                     </div>
                     <div class="text">
                         <p class="nmp p-red">Rio de Janeiro</p>
@@ -115,6 +115,458 @@ include "_inc_headers.php";
                         <a href="/page_portfolio" class="btn btn-portfolio">mais detalhes</a>
                     </div>
                 </div>
+                <div class="image-to">
+                    <div class="img">
+                        <img src="/website/img/portfolio/atacadao-rio.png" alt="">
+                    </div>
+                    <div class="text">
+                        <p class="nmp p-red">Rio de Janeiro</p>
+                        <p class="nmp p-black">Rio das Ostras</p>
+                        <h4>Atacadão Rio das Ostras</h4>
+                        <a href="/page_portfolio" class="btn btn-portfolio">mais detalhes</a>
+                    </div>
+                </div>
+                <div class="image-to">
+                    <div class="img">
+                        <img src="/website/img/portfolio/atacadao-osasco.png" alt="">
+                    </div>
+                    <div class="text">
+                        <p class="nmp p-red">Rio de Janeiro</p>
+                        <p class="nmp p-black">Rio das Ostras</p>
+                        <h4>Atacadão Rio das Ostras</h4>
+                        <a href="/page_portfolio" class="btn btn-portfolio">mais detalhes</a>
+                    </div>
+                </div>
+                <div class="image-to">
+                    <div class="img">
+                        <img src="/website/img/portfolio/atacadao-rio.png" alt="">
+                    </div>
+                    <div class="text">
+                        <p class="nmp p-red">Rio de Janeiro</p>
+                        <p class="nmp p-black">Rio das Ostras</p>
+                        <h4>Atacadão Rio das Ostras</h4>
+                        <a href="/page_portfolio" class="btn btn-portfolio">mais detalhes</a>
+                    </div>
+                </div>
+                <div class="image-to">
+                    <div class="img">
+                        <img src="/website/img/portfolio/atacadao-osasco.png" alt="">
+                    </div>
+                    <div class="text">
+                        <p class="nmp p-red">Rio de Janeiro</p>
+                        <p class="nmp p-black">Rio das Ostras</p>
+                        <h4>Atacadão Rio das Ostras</h4>
+                        <a href="/page_portfolio" class="btn btn-portfolio">mais detalhes</a>
+                    </div>
+                </div>
+                <div class="image-to">
+                    <div class="img">
+                        <img src="/website/img/portfolio/atacadao-rio.png" alt="">
+                    </div>
+                    <div class="text">
+                        <p class="nmp p-red">Rio de Janeiro</p>
+                        <p class="nmp p-black">Rio das Ostras</p>
+                        <h4>Atacadão Rio das Ostras</h4>
+                        <a href="/page_portfolio" class="btn btn-portfolio">mais detalhes</a>
+                    </div>
+                </div>
+                <div class="image-to">
+                    <div class="img">
+                        <img src="/website/img/portfolio/atacadao-rio.png" alt="">
+                    </div>
+                    <div class="text">
+                        <p class="nmp p-red">Rio de Janeiro</p>
+                        <p class="nmp p-black">Rio das Ostras</p>
+                        <h4>Atacadão Rio das Ostras</h4>
+                        <a href="/page_portfolio" class="btn btn-portfolio">mais detalhes</a>
+                    </div>
+                </div>
+                <div class="image-to">
+                    <div class="img">
+                        <img src="/website/img/portfolio/atacadao-rio.png" alt="">
+                    </div>
+                    <div class="text">
+                        <p class="nmp p-red">Rio de Janeiro</p>
+                        <p class="nmp p-black">Rio das Ostras</p>
+                        <h4>Atacadão Rio das Ostras</h4>
+                        <a href="/page_portfolio" class="btn btn-portfolio">mais detalhes</a>
+                    </div>
+                </div>
+                <div class="image-to">
+                    <div class="img">
+                        <img src="/website/img/portfolio/atacadao-rio.png" alt="">
+                    </div>
+                    <div class="text">
+                        <p class="nmp p-red">Rio de Janeiro</p>
+                        <p class="nmp p-black">Rio das Ostras</p>
+                        <h4>Atacadão Rio das Ostras</h4>
+                        <a href="/page_portfolio" class="btn btn-portfolio">mais detalhes</a>
+                    </div>
+                </div>
+                <div class="image-to">
+                    <div class="img">
+                        <img src="/website/img/portfolio/atacadao-rio.png" alt="">
+                    </div>
+                    <div class="text">
+                        <p class="nmp p-red">Rio de Janeiro</p>
+                        <p class="nmp p-black">Rio das Ostras</p>
+                        <h4>Atacadão Rio das Ostras</h4>
+                        <a href="/page_portfolio" class="btn btn-portfolio">mais detalhes</a>
+                    </div>
+                </div>
+                <div class="image-to">
+                    <div class="img">
+                        <img src="/website/img/portfolio/atacadao-rio.png" alt="">
+                    </div>
+                    <div class="text">
+                        <p class="nmp p-red">Rio de Janeiro</p>
+                        <p class="nmp p-black">Rio das Ostras</p>
+                        <h4>Atacadão Rio das Ostras</h4>
+                        <a href="/page_portfolio" class="btn btn-portfolio">mais detalhes</a>
+                    </div>
+                </div>
+                <div class="image-to">
+                    <div class="img">
+                        <img src="/website/img/portfolio/atacadao-rio.png" alt="">
+                    </div>
+                    <div class="text">
+                        <p class="nmp p-red">Rio de Janeiro</p>
+                        <p class="nmp p-black">Rio das Ostras</p>
+                        <h4>Atacadão Rio das Ostras</h4>
+                        <a href="/page_portfolio" class="btn btn-portfolio">mais detalhes</a>
+                    </div>
+                </div>
+                <div class="image-to">
+                    <div class="img">
+                        <img src="/website/img/portfolio/atacadao-rio.png" alt="">
+                    </div>
+                    <div class="text">
+                        <p class="nmp p-red">Rio de Janeiro</p>
+                        <p class="nmp p-black">Rio das Ostras</p>
+                        <h4>Atacadão Rio das Ostras</h4>
+                        <a href="/page_portfolio" class="btn btn-portfolio">mais detalhes</a>
+                    </div>
+                </div>
+                <div class="image-to">
+                    <div class="img">
+                        <img src="/website/img/portfolio/atacadao-rio.png" alt="">
+                    </div>
+                    <div class="text">
+                        <p class="nmp p-red">Rio de Janeiro</p>
+                        <p class="nmp p-black">Rio das Ostras</p>
+                        <h4>Atacadão Rio das Ostras</h4>
+                        <a href="/page_portfolio" class="btn btn-portfolio">mais detalhes</a>
+                    </div>
+                </div>
+                <div class="image-to">
+                    <div class="img">
+                        <img src="/website/img/portfolio/atacadao-rio.png" alt="">
+                    </div>
+                    <div class="text">
+                        <p class="nmp p-red">Rio de Janeiro</p>
+                        <p class="nmp p-black">Rio das Ostras</p>
+                        <h4>Atacadão Rio das Ostras</h4>
+                        <a href="/page_portfolio" class="btn btn-portfolio">mais detalhes</a>
+                    </div>
+                </div>
+                <div class="image-to">
+                    <div class="img">
+                        <img src="/website/img/portfolio/atacadao-rio.png" alt="">
+                    </div>
+                    <div class="text">
+                        <p class="nmp p-red">Rio de Janeiro</p>
+                        <p class="nmp p-black">Rio das Ostras</p>
+                        <h4>Atacadão Rio das Ostras</h4>
+                        <a href="/page_portfolio" class="btn btn-portfolio">mais detalhes</a>
+                    </div>
+                </div>
+                <div class="image-to">
+                    <div class="img">
+                        <img src="/website/img/portfolio/atacadao-rio.png" alt="">
+                    </div>
+                    <div class="text">
+                        <p class="nmp p-red">Rio de Janeiro</p>
+                        <p class="nmp p-black">Rio das Ostras</p>
+                        <h4>Atacadão Rio das Ostras</h4>
+                        <a href="/page_portfolio" class="btn btn-portfolio">mais detalhes</a>
+                    </div>
+                </div>
+                <div class="image-to">
+                    <div class="img">
+                        <img src="/website/img/portfolio/atacadao-rio.png" alt="">
+                    </div>
+                    <div class="text">
+                        <p class="nmp p-red">Rio de Janeiro</p>
+                        <p class="nmp p-black">Rio das Ostras</p>
+                        <h4>Atacadão Rio das Ostras</h4>
+                        <a href="/page_portfolio" class="btn btn-portfolio">mais detalhes</a>
+                    </div>
+                </div>
+                <div class="image-to">
+                    <div class="img">
+                        <img src="/website/img/portfolio/atacadao-rio.png" alt="">
+                    </div>
+                    <div class="text">
+                        <p class="nmp p-red">Rio de Janeiro</p>
+                        <p class="nmp p-black">Rio das Ostras</p>
+                        <h4>Atacadão Rio das Ostras</h4>
+                        <a href="/page_portfolio" class="btn btn-portfolio">mais detalhes</a>
+                    </div>
+                </div>
+                <div class="image-to">
+                    <div class="img">
+                        <img src="/website/img/portfolio/atacadao-rio.png" alt="">
+                    </div>
+                    <div class="text">
+                        <p class="nmp p-red">Rio de Janeiro</p>
+                        <p class="nmp p-black">Rio das Ostras</p>
+                        <h4>Atacadão Rio das Ostras</h4>
+                        <a href="/page_portfolio" class="btn btn-portfolio">mais detalhes</a>
+                    </div>
+                </div>
+                <div class="image-to">
+                    <div class="img">
+                        <img src="/website/img/portfolio/atacadao-rio.png" alt="">
+                    </div>
+                    <div class="text">
+                        <p class="nmp p-red">Rio de Janeiro</p>
+                        <p class="nmp p-black">Rio das Ostras</p>
+                        <h4>Atacadão Rio das Ostras</h4>
+                        <a href="/page_portfolio" class="btn btn-portfolio">mais detalhes</a>
+                    </div>
+                </div>
+                <div class="image-to">
+                    <div class="img">
+                        <img src="/website/img/portfolio/atacadao-rio.png" alt="">
+                    </div>
+                    <div class="text">
+                        <p class="nmp p-red">Rio de Janeiro</p>
+                        <p class="nmp p-black">Rio das Ostras</p>
+                        <h4>Atacadão Rio das Ostras</h4>
+                        <a href="/page_portfolio" class="btn btn-portfolio">mais detalhes</a>
+                    </div>
+                </div>
+                <div class="image-to">
+                    <div class="img">
+                        <img src="/website/img/portfolio/atacadao-rio.png" alt="">
+                    </div>
+                    <div class="text">
+                        <p class="nmp p-red">Rio de Janeiro</p>
+                        <p class="nmp p-black">Rio das Ostras</p>
+                        <h4>Atacadão Rio das Ostras</h4>
+                        <a href="/page_portfolio" class="btn btn-portfolio">mais detalhes</a>
+                    </div>
+                </div>
+                <div class="image-to">
+                    <div class="img">
+                        <img src="/website/img/portfolio/atacadao-rio.png" alt="">
+                    </div>
+                    <div class="text">
+                        <p class="nmp p-red">Rio de Janeiro</p>
+                        <p class="nmp p-black">Rio das Ostras</p>
+                        <h4>Atacadão Rio das Ostras</h4>
+                        <a href="/page_portfolio" class="btn btn-portfolio">mais detalhes</a>
+                    </div>
+                </div>
+                <div class="image-to">
+                    <div class="img">
+                        <img src="/website/img/portfolio/atacadao-rio.png" alt="">
+                    </div>
+                    <div class="text">
+                        <p class="nmp p-red">Rio de Janeiro</p>
+                        <p class="nmp p-black">Rio das Ostras</p>
+                        <h4>Atacadão Rio das Ostras</h4>
+                        <a href="/page_portfolio" class="btn btn-portfolio">mais detalhes</a>
+                    </div>
+                </div>
+                <div class="image-to">
+                    <div class="img">
+                        <img src="/website/img/portfolio/atacadao-rio.png" alt="">
+                    </div>
+                    <div class="text">
+                        <p class="nmp p-red">Rio de Janeiro</p>
+                        <p class="nmp p-black">Rio das Ostras</p>
+                        <h4>Atacadão Rio das Ostras</h4>
+                        <a href="/page_portfolio" class="btn btn-portfolio">mais detalhes</a>
+                    </div>
+                </div>
+                <div class="image-to">
+                    <div class="img">
+                        <img src="/website/img/portfolio/atacadao-rio.png" alt="">
+                    </div>
+                    <div class="text">
+                        <p class="nmp p-red">Rio de Janeiro</p>
+                        <p class="nmp p-black">Rio das Ostras</p>
+                        <h4>Atacadão Rio das Ostras</h4>
+                        <a href="/page_portfolio" class="btn btn-portfolio">mais detalhes</a>
+                    </div>
+                </div>
+                <div class="image-to">
+                    <div class="img">
+                        <img src="/website/img/portfolio/atacadao-rio.png" alt="">
+                    </div>
+                    <div class="text">
+                        <p class="nmp p-red">Rio de Janeiro</p>
+                        <p class="nmp p-black">Rio das Ostras</p>
+                        <h4>Atacadão Rio das Ostras</h4>
+                        <a href="/page_portfolio" class="btn btn-portfolio">mais detalhes</a>
+                    </div>
+                </div>
+                <div class="image-to">
+                    <div class="img">
+                        <img src="/website/img/portfolio/atacadao-rio.png" alt="">
+                    </div>
+                    <div class="text">
+                        <p class="nmp p-red">Rio de Janeiro</p>
+                        <p class="nmp p-black">Rio das Ostras</p>
+                        <h4>Atacadão Rio das Ostras</h4>
+                        <a href="/page_portfolio" class="btn btn-portfolio">mais detalhes</a>
+                    </div>
+                </div>
+                <div class="image-to">
+                    <div class="img">
+                        <img src="/website/img/portfolio/atacadao-rio.png" alt="">
+                    </div>
+                    <div class="text">
+                        <p class="nmp p-red">Rio de Janeiro</p>
+                        <p class="nmp p-black">Rio das Ostras</p>
+                        <h4>Atacadão Rio das Ostras</h4>
+                        <a href="/page_portfolio" class="btn btn-portfolio">mais detalhes</a>
+                    </div>
+                </div>
+                <div class="image-to">
+                    <div class="img">
+                        <img src="/website/img/portfolio/atacadao-rio.png" alt="">
+                    </div>
+                    <div class="text">
+                        <p class="nmp p-red">Rio de Janeiro</p>
+                        <p class="nmp p-black">Rio das Ostras</p>
+                        <h4>Atacadão Rio das Ostras</h4>
+                        <a href="/page_portfolio" class="btn btn-portfolio">mais detalhes</a>
+                    </div>
+                </div>
+                <div class="image-to">
+                    <div class="img">
+                        <img src="/website/img/portfolio/atacadao-rio.png" alt="">
+                    </div>
+                    <div class="text">
+                        <p class="nmp p-red">Rio de Janeiro</p>
+                        <p class="nmp p-black">Rio das Ostras</p>
+                        <h4>Atacadão Rio das Ostras</h4>
+                        <a href="/page_portfolio" class="btn btn-portfolio">mais detalhes</a>
+                    </div>
+                </div>
+                <div class="image-to">
+                    <div class="img">
+                        <img src="/website/img/portfolio/atacadao-rio.png" alt="">
+                    </div>
+                    <div class="text">
+                        <p class="nmp p-red">Rio de Janeiro</p>
+                        <p class="nmp p-black">Rio das Ostras</p>
+                        <h4>Atacadão Rio das Ostras</h4>
+                        <a href="/page_portfolio" class="btn btn-portfolio">mais detalhes</a>
+                    </div>
+                </div>
+                <div class="image-to">
+                    <div class="img">
+                        <img src="/website/img/portfolio/atacadao-rio.png" alt="">
+                    </div>
+                    <div class="text">
+                        <p class="nmp p-red">Rio de Janeiro</p>
+                        <p class="nmp p-black">Rio das Ostras</p>
+                        <h4>Atacadão Rio das Ostras</h4>
+                        <a href="/page_portfolio" class="btn btn-portfolio">mais detalhes</a>
+                    </div>
+                </div>
+                <div class="image-to">
+                    <div class="img">
+                        <img src="/website/img/portfolio/atacadao-rio.png" alt="">
+                    </div>
+                    <div class="text">
+                        <p class="nmp p-red">Rio de Janeiro</p>
+                        <p class="nmp p-black">Rio das Ostras</p>
+                        <h4>Atacadão Rio das Ostras</h4>
+                        <a href="/page_portfolio" class="btn btn-portfolio">mais detalhes</a>
+                    </div>
+                </div>
+                <div class="image-to">
+                    <div class="img">
+                        <img src="/website/img/portfolio/atacadao-rio.png" alt="">
+                    </div>
+                    <div class="text">
+                        <p class="nmp p-red">Rio de Janeiro</p>
+                        <p class="nmp p-black">Rio das Ostras</p>
+                        <h4>Atacadão Rio das Ostras</h4>
+                        <a href="/page_portfolio" class="btn btn-portfolio">mais detalhes</a>
+                    </div>
+                </div>
+                <div class="image-to">
+                    <div class="img">
+                        <img src="/website/img/portfolio/atacadao-rio.png" alt="">
+                    </div>
+                    <div class="text">
+                        <p class="nmp p-red">Rio de Janeiro</p>
+                        <p class="nmp p-black">Rio das Ostras</p>
+                        <h4>Atacadão Rio das Ostras</h4>
+                        <a href="/page_portfolio" class="btn btn-portfolio">mais detalhes</a>
+                    </div>
+                </div>
+                <div class="image-to">
+                    <div class="img">
+                        <img src="/website/img/portfolio/atacadao-rio.png" alt="">
+                    </div>
+                    <div class="text">
+                        <p class="nmp p-red">Rio de Janeiro</p>
+                        <p class="nmp p-black">Rio das Ostras</p>
+                        <h4>Atacadão Rio das Ostras</h4>
+                        <a href="/page_portfolio" class="btn btn-portfolio">mais detalhes</a>
+                    </div>
+                </div>
+                <div class="image-to">
+                    <div class="img">
+                        <img src="/website/img/portfolio/atacadao-rio.png" alt="">
+                    </div>
+                    <div class="text">
+                        <p class="nmp p-red">Rio de Janeiro</p>
+                        <p class="nmp p-black">Rio das Ostras</p>
+                        <h4>Atacadão Rio das Ostras</h4>
+                        <a href="/page_portfolio" class="btn btn-portfolio">mais detalhes</a>
+                    </div>
+                </div>
+                <div class="image-to">
+                    <div class="img">
+                        <img src="/website/img/portfolio/atacadao-rio.png" alt="">
+                    </div>
+                    <div class="text">
+                        <p class="nmp p-red">Rio de Janeiro</p>
+                        <p class="nmp p-black">Rio das Ostras</p>
+                        <h4>Atacadão Rio das Ostras</h4>
+                        <a href="/page_portfolio" class="btn btn-portfolio">mais detalhes</a>
+                    </div>
+                </div>
+                <div class="image-to">
+                    <div class="img">
+                        <img src="/website/img/portfolio/atacadao-rio.png" alt="">
+                    </div>
+                    <div class="text">
+                        <p class="nmp p-red">Rio de Janeiro</p>
+                        <p class="nmp p-black">Rio das Ostras</p>
+                        <h4>Atacadão Rio das Ostras</h4>
+                        <a href="/page_portfolio" class="btn btn-portfolio">mais detalhes</a>
+                    </div>
+                </div>
+                <div class="image-to">
+                    <div class="img">
+                        <img src="/website/img/portfolio/atacadao-rio.png" alt="">
+                    </div>
+                    <div class="text">
+                        <p class="nmp p-red">Rio de Janeiro</p>
+                        <p class="nmp p-black">Rio das Ostras</p>
+                        <h4>Atacadão Rio das Ostras</h4>
+                        <a href="/page_portfolio" class="btn btn-portfolio">mais detalhes</a>
+                    </div>
+                </div>
+
             </div>
             <div class="container divider">
             </div>

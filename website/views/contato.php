@@ -76,7 +76,7 @@
 					<div class="form-itens">
 						<input type="text" class="inputs" placeholder="Nome">
 						<input type="text" class="inputs" placeholder="E-mail">
-						<input type="text" class="inputs" placeholder="Telefone">
+						<input type="text"  id="input-telefone class="input-text-contato inputs" placeholder="Telefone">
 						<textarea placeholder="Deixe uma mensagem" name="" id="" cols="30" rows="10" class="textarea"></textarea>
 						<div class="content-check">
 							<input type="checkbox" id="checkbox1" name="accept" value="accept" required>
