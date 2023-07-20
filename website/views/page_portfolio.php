@@ -4,8 +4,9 @@ include "_inc_headers.php";
 ?>
 <title>Portfólio</title>
 
+</head>
+
 <body id="<?php echo $pagina; ?>">
-    </head>
 
     <body id="<?php echo $pagina; ?>">
         <?php
@@ -54,6 +55,9 @@ include "_inc_headers.php";
                     <!-- Use figure for a more semantic html -->
                     <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
                         <!-- Link to the big image, not mandatory, but usefull when there is no JS -->
+                        <button class="btn-play" id="playBtn" data-bs-toggle="modal" data-bs-target="#dynamicVideoModal">
+                            <img src="/website/img/portfolio/btn-play.png" alt="">
+                        </button>
                         <a class="open" href="/website/img/portfolio/image3.png" data-caption="Sea side, south shore<br><em class='text-muted'>© Dominik Schröder</em>" data-width="1200" data-height="900" itemprop="contentUrl">
                             <!-- Thumbnail -->
                             <img src="/website/img/portfolio/image3.png" itemprop="thumbnail" alt="Image description">
@@ -139,14 +143,8 @@ include "_inc_headers.php";
             </div>
 
         </section>
-    <!-- modal -->
-        
+        <!-- modal -->
         <section class="video">
-            <div class="mini-player-container">
-                <button class="playBtn" id="playBtn" data-bs-toggle="modal" data-bs-target="#dynamicVideoModal">
-                    <img class="play-btn" src="/website/img/portfolio/btn-play.png" alt="">
-                </button>
-            </div>
             <div class="modal fade app" id="dynamicVideoModal" tabindex="-1" aria-hidden="true">
                 <div class="modal-dialog modal-fullscreen modal-dialog-centered modal-xl">
                     <div class="modal-content at-container">
@@ -158,10 +156,12 @@ include "_inc_headers.php";
         </section>
 
 
+
+
         <?php
         include "_inc_footer.php";
-         include "website/plugins/photoswipe/photoswipe.php";
-         ?>
+        include "website/plugins/photoswipe/photoswipe.php";
+        ?>
     </body>
 
 

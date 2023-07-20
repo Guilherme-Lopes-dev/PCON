@@ -4624,158 +4624,6 @@ body#page_portfolio section.images .container {
   align-items: center;
   position: relative;
 }
-body#page_portfolio section.images .container .modal.fade.app {
-  margin: auto;
-}
-body#page_portfolio section.images .container .modal.fade.app .at-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-  animation-name: slit-in-horizontal;
-  animation-duration: 1s;
-  animation-timing-function: linear;
-  animation-delay: 0s;
-  animation-iteration-count: 1;
-  animation-direction: normal;
-  animation-fill-mode: none;
-}
-body#page_portfolio section.images .container .modal.fade.app .at-item {
-  width: 100px;
-  height: 100px;
-  background-color: transparent;
-}
-@keyframes slit-in-horizontal {
-  0% {
-    transform: translateZ(-800px) rotateX(90deg);
-    opacity: 0;
-  }
-  50% {
-    transform: translateZ(-160px) rotateX(87deg);
-    opacity: 1;
-  }
-  100% {
-    transform: translateZ(0) rotateX(0);
-  }
-}
-body#page_portfolio section.images .container .modal.fade.app .modal-dialog {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-body#page_portfolio section.images .container .modal.fade.app .modal-dialog .modal-content {
-  width: 80dvw;
-  height: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  background-color: transparent;
-  border: none;
-}
-body#page_portfolio section.images .container .modal.fade.app .modal-dialog .modal-content #player::before {
-  content: "";
-  background-color: black;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 80dvw;
-  height: 550px;
-  margin: auto;
-  z-index: 1;
-}
-body#page_portfolio section.images .container .modal.fade.app .modal-dialog .modal-content iframe {
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 1030px;
-  height: 580px;
-  border-radius: 10px;
-  top: -206px;
-}
-@media (max-width: 959.9px) {
-  body#page_portfolio section.images .container .modal.fade.app .modal-dialog .modal-content iframe {
-    height: 300px;
-  }
-}
-body#page_portfolio section.images .container .modal.fade.app {
-  margin: auto;
-}
-body#page_portfolio section.images .container .modal.fade.app .at-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-  animation-name: slit-in-horizontal;
-  animation-duration: 1s;
-  animation-timing-function: linear;
-  animation-delay: 0s;
-  animation-iteration-count: 1;
-  animation-direction: normal;
-  animation-fill-mode: none;
-  border: 1px solid red;
-  z-index: 10000000000000000000000000000000000000000000;
-}
-body#page_portfolio section.images .container .modal.fade.app .at-item {
-  width: 100px;
-  height: 100px;
-  background-color: transparent;
-}
-@keyframes slit-in-horizontal {
-  0% {
-    transform: translateZ(-800px) rotateX(90deg);
-    opacity: 0;
-  }
-  50% {
-    transform: translateZ(-160px) rotateX(87deg);
-    opacity: 1;
-  }
-  100% {
-    transform: translateZ(0) rotateX(0);
-  }
-}
-body#page_portfolio section.images .container .modal.fade.app .modal-dialog {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-body#page_portfolio section.images .container .modal.fade.app .modal-dialog .modal-content {
-  width: 80dvw;
-  height: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  background-color: transparent;
-  border: none;
-}
-body#page_portfolio section.images .container .modal.fade.app .modal-dialog .modal-content #player::before {
-  content: "";
-  background-color: black;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 80dvw;
-  height: 550px;
-  margin: auto;
-  z-index: 1;
-}
-body#page_portfolio section.images .container .modal.fade.app .modal-dialog .modal-content iframe {
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 1030px;
-  height: 580px;
-  border-radius: 10px;
-  top: -206px;
-}
-@media (max-width: 959.9px) {
-  body#page_portfolio section.images .container .modal.fade.app .modal-dialog .modal-content iframe {
-    height: 300px;
-  }
-}
 body#page_portfolio section.images .container .gallery {
   width: 100%;
   display: grid;
@@ -4785,6 +4633,27 @@ body#page_portfolio section.images .container .gallery {
 }
 body#page_portfolio section.images .container .gallery figure {
   margin: 0 !important;
+  position: relative;
+}
+body#page_portfolio section.images .container .gallery figure .btn-play {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  border: none;
+  background: transparent;
+  /* Adicione esse estilo para garantir que o fundo do botão seja transparente */
+  padding: 0;
+  /* Remova qualquer padding para evitar espaços desnecessários */
+  text-decoration: none;
+  box-shadow: none;
+  outline: none;
+}
+body#page_portfolio section.images .container .gallery figure .btn-play:focus {
+  border: none;
+  background: none;
+  box-shadow: none;
+  outline: none;
 }
 body#page_portfolio section.images .container .gallery figure img {
   width: 100%;
@@ -4817,10 +4686,43 @@ body#page_portfolio section.images .container .gallery figure img {
   }
 }
 body#page_portfolio section.video {
-  border: 1px solid red;
   position: relative;
-  margin-top: 100px;
-  margin-bottom: 100px;
+  border: none;
+}
+body#page_portfolio section.video .play-btn {
+  background-color: transparent;
+  border: 5px solid red;
+}
+body#page_portfolio section.video .modal.fade.app .at-container {
+  height: 100%;
+}
+body#page_portfolio section.video .modal.fade.app .at-item {
+  width: 100px;
+  height: 100px;
+  background-color: transparent;
+}
+body#page_portfolio section.video .modal.fade.app .modal-dialog {
+  position: relative;
+}
+body#page_portfolio section.video .modal.fade.app .modal-dialog .modal-content {
+  height: 550px;
+  display: flex;
+  background-color: transparent;
+  position: relative;
+}
+body#page_portfolio section.video .modal.fade.app .modal-dialog .modal-content #player {
+  position: absolute;
+  left: -45%;
+}
+body#page_portfolio section.video .modal.fade.app .modal-dialog .modal-content iframe {
+  width: 1030px;
+  height: 580px;
+  border-radius: 10px;
+}
+@media (max-width: 959.9px) {
+  body#page_portfolio section.video .modal.fade.app .modal-dialog .modal-content iframe {
+    height: 300px;
+  }
 }
 @media (max-width: 1100px) {
   body#page_portfolio section.video {
