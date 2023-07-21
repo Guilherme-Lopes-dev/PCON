@@ -169,9 +169,7 @@ include "_inc_headers.php";
         'use strict';
 
         /* global jQuery, PhotoSwipe, PhotoSwipeUI_Default, console */
-
         (function($) {
-
             // Init empty gallery array
             var container = [];
 
@@ -189,9 +187,11 @@ include "_inc_headers.php";
 
             // Define click event on gallery item
             $('.open').click(function(event) {
-
                 // Prevent location change
                 event.preventDefault();
+
+                // Add class to header to hide it
+                $('header').addClass('hide-header');
 
                 // Define object and gallery options
                 var $pswp = $('.pswp')[0],
@@ -203,9 +203,14 @@ include "_inc_headers.php";
 
                 // Initialize PhotoSwipe
                 var gallery = new PhotoSwipe($pswp, PhotoSwipeUI_Default, container, options);
+
+                // Close event - remove class to show the header again
+                gallery.listen('close', function() {
+                    $('header').removeClass('hide-header');
+                });
+
                 gallery.init();
             });
-
         }(jQuery));
     </script>
 
