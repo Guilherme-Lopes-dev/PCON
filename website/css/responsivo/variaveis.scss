@@ -39,8 +39,6 @@
     }
 
 
-
-
     .container-home.navbar-desktop {
         display: flex;
         justify-content: space-between;
@@ -75,9 +73,9 @@
             justify-content: space-around;
             margin-left: 115px !important;
 
-            @media (max-width:1260px) {
+            @media (max-width: 1200px) {
+                margin-left: 0px !important;
 
-                display: none;
             }
 
             .link {
@@ -92,6 +90,19 @@
                 margin-right: 53px;
                 text-transform: uppercase;
                 position: relative;
+
+                @media (max-width: 1200px) {
+                    margin-right: unset;
+                }
+
+                @media (max-width: 960px) {
+                font-size: 10px;
+
+                }
+
+                @media (max-width: 800px) {
+                    font-size: 9px;
+                    }
 
                 &:hover {
                     &::after {
@@ -150,7 +161,6 @@
 
         .btn-mobile {
             display: none;
-
 
             .openBtn {
                 text-decoration: none;
@@ -282,9 +292,6 @@
 
             }
 
-
-
-
         }
 
 
@@ -295,12 +302,11 @@
         @media(max-width: 1200px) and (min-width:960.1px) {
             .link {
                 font-size: 12px;
-
             }
         }
 
 
-        @media (max-width:960px) {
+        @media (max-width:768px) {
             .nav-items {
                 display: none;
             }
@@ -309,10 +315,14 @@
                 display: block;
             }
 
+            .btn-desktop {
+                display: none;
+            }
+
+
 
         }
 
-        @media(max-width:768px) {}
 
     }
 
@@ -423,11 +433,6 @@
             line-height: normal;
             letter-spacing: 2.2px;
             text-transform: uppercase;
-            .icon{
-                margin-left: -5px !important;
-                margin-right: 10px !important;
-                margin-top: -3px;
-            }
         }
 
 
@@ -473,6 +478,19 @@
 
     }
 
+    .btn.fale {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        color: #000;
+        font-family: Inter;
+        font-size: 11px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 2.2px;
+        text-transform: uppercase;
+    }
 }
 
 @mixin flex-wrap {

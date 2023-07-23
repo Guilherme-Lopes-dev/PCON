@@ -3603,7 +3603,6 @@ body#page_portfolio {
 
             .play-btn {
                 background-color: transparent;
-                border: 5px solid red;
             }
 
             .modal.fade.app {
@@ -3632,23 +3631,20 @@ body#page_portfolio {
                         position: relative;
 
                         #player {
-                            position: absolute;
-                            left: -45%;
+                            position: relative;
 
                         }
 
                         iframe {
-
+                            position: absolute;
                             width: 1030px;
+                            max-width: 90vw;
                             height: 580px;
+                            max-height: 580px;
                             border-radius: 10px;
-
-
-
-                            @media (max-width:959.9px) {
-                                height: 300px;
-
-                            }
+                            top: 50%;
+                            left: 50%;
+                            transform: translate(-50%, -50%);
 
 
                         }
@@ -3656,44 +3652,6 @@ body#page_portfolio {
                 }
             }
 
-
-            @media (max-width:1100px) {
-                margin: 150px 0 200px 0;
-
-            }
-
-            img {
-                width: 100%;
-                position: relative;
-                z-index: 1;
-            }
-
-            iframe {
-                z-index: 2;
-                position: absolute;
-                top: 0;
-                left: 0;
-                right: 0;
-                bottom: 0;
-
-                margin: auto;
-
-                @media (max-width:960px) {
-                    height: 350px;
-                    width: 525px;
-                }
-
-                @media (max-width:768px) {
-                    height: 250px;
-                    width: 425px;
-                }
-
-                @media (max-width:768px) {
-                    height: 200px;
-                    width: 350px;
-                }
-
-            }
         }
     }
 
