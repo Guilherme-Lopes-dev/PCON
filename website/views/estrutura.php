@@ -45,21 +45,21 @@ include "_inc_headers.php";
             <div class="container">
                 <div id="gallery" class="gallery" itemscope itemtype="http://schema.org/ImageGallery">
 
-                    <figure class="image"  itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                    <figure class="image" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
                         <!-- Link to the big image, not mandatory, but usefull when there is no JS -->
                         <a class="open" href="/website/img/estrutura/img1.png" data-caption="Sea side, south shore<br><em class='text-muted'>© Dominik Schröder</em>" data-width="1200" data-height="900" itemprop="contentUrl">
                             <!-- Thumbnail -->
                             <img src="/website/img/estrutura/img1.png" itemprop="thumbnail" alt="Image description">
                         </a>
                     </figure>
-                    <figure  class="image" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                    <figure class="image" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
                         <!-- Link to the big image, not mandatory, but usefull when there is no JS -->
                         <a class="open" href="/website/img/estrutura/img1.png" data-caption="Saaa side, south shore<br><em class='text-muted'>© Dominik Schröder</em>" data-width="1200" data-height="900" itemprop="contentUrl">
                             <!-- Thumbnail -->
                             <img src="/website/img/estrutura/img1.png" itemprop="thumbnail" alt="Image description">
                         </a>
                     </figure>
-                    <figure class="image"  itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                    <figure class="image" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
                         <!-- Link to the big image, not mandatory, but usefull when there is no JS -->
                         <a class="open" href="/website/img/estrutura/img1.png" data-caption="Saaa side, south shore<br><em class='text-muted'>© Dominik Schröder</em>" data-width="1200" data-height="900" itemprop="contentUrl">
                             <!-- Thumbnail -->
@@ -84,7 +84,6 @@ include "_inc_headers.php";
         /* global jQuery, PhotoSwipe, PhotoSwipeUI_Default, console */
 
         (function($) {
-
             // Init empty gallery array
             var container = [];
 
@@ -102,9 +101,11 @@ include "_inc_headers.php";
 
             // Define click event on gallery item
             $('.open').click(function(event) {
-
                 // Prevent location change
                 event.preventDefault();
+
+                // Add class to header to hide it
+                $('header').addClass('hide-header');
 
                 // Define object and gallery options
                 var $pswp = $('.pswp')[0],
@@ -116,9 +117,14 @@ include "_inc_headers.php";
 
                 // Initialize PhotoSwipe
                 var gallery = new PhotoSwipe($pswp, PhotoSwipeUI_Default, container, options);
+
+                // Close event - remove class to show the header again
+                gallery.listen('close', function() {
+                    $('header').removeClass('hide-header');
+                });
+
                 gallery.init();
             });
-
         }(jQuery));
     </script>
 
