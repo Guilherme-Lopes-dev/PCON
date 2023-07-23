@@ -162,6 +162,8 @@ $(document).ready(function () {
       }
     }
   );
+
+  inicializaMascaras();
 });
 
 //Abre e fecha menu lateral
@@ -489,4 +491,65 @@ if (pagina === "page_portfolio") {
 }
 
 if (pagina === "contato") {
+}
+
+function inicializaMascaras(pre_cssselector = "") {
+  $(pre_cssselector + " input.mask-cep").inputmask({ mask: "99.999-999" });
+  $(pre_cssselector + " input.mask-cpf").inputmask({ mask: "999.999.999-99" });
+  $(pre_cssselector + " input.mask-cnpj").inputmask({
+    mask: "99.999.999/9999-99",
+  });
+  $(pre_cssselector + " input.mask-numero").inputmask({
+    mask: "[9][9][9][9][9]",
+    greedy: false,
+  });
+  $(pre_cssselector + " input.mask-data").inputmask({ mask: "99/99/9999" });
+  $(pre_cssselector + " input.mask-telefone").inputmask({
+    mask: ["(99) 9999-9999", "(99) 99999-9999"],
+    greedy: false,
+  });
+
+  var mask_telefone = function (val) {
+      return "(00) 0000-0000";
+    },
+    options_telefone = {
+      onKeyPress: function (val, e, field, options) {
+        field.mask(mask_telefone.apply({}, arguments), options);
+      },
+    };
+
+  var mask_celular = function (val) {
+      return val.replace(/\D/g, "").length === 11
+        ? "(00) 00000-0000"
+        : "(00) 0000-00009";
+    },
+    options_celular = {
+      onKeyPress: function (val, e, field, options) {
+        field.mask(mask_celular.apply({}, arguments), options);
+      },
+    };
+
+  $(".telefone").mask(mask_telefone, options_telefone);
+  $(".celular").mask(mask_celular, options_celular);
+
+  // ------   FILE INPUTS + LABEL  ------  //
+
+  var inputs = document.querySelectorAll(".inputfile");
+  Array.prototype.forEach.call(inputs, function (input) {
+    var label = input.nextElementSibling,
+      labelVal = label.innerHTML;
+
+    input.addEventListener("change", function (e) {
+      var fileName = "";
+      if (this.files && this.files.length > 1)
+        fileName = (this.getAttribute("data-multiple-caption") || "").replace(
+          "{count}",
+          this.files.length
+        );
+      else fileName = e.target.value.split("\\").pop();
+
+      if (fileName) label.querySelector("span").innerHTML = fileName;
+      else label.querySelector("span").innerHTML = labelVal;
+    });
+  });
 }
