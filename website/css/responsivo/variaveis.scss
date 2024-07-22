@@ -71,7 +71,7 @@
             max-width: 500px;
             display: flex;
             justify-content: space-around;
-            margin-left: 115px !important;
+            margin-left: -115px !important;
 
             @media (max-width: 1200px) {
                 margin-left: 0px !important;
